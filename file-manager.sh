@@ -4,12 +4,15 @@
 
 # Print help
 if [[ $1 = "--help" ]]; then
-    echo 'File Manager'
-    echo 'Author: Rahmatollah Ansari\n'
-    # echo ' '
+    echo 'File Manager for Linux'
+    echo 'Writer: Rahmatollah Ansari'
+    echo 'Student Code: 9912377331'
+    echo 'github: github.com/EnAnsari'
+    echo 'Email: Rahmat2022a@gmail.com'
+    echo ''
     echo 'Usage:'
     echo ' fb [-dbh] [folder]'
-    echo ' '
+    echo ''
     echo 'Options:'
     echo ' -h : print last ssh destination'
     echo ' -d : print last folder'
