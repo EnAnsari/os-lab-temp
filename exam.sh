@@ -5,11 +5,11 @@ init_term()
 }
 
 end() {
-    printf '\e[?1049l\e[2J\e[?7h\e[?25h'&& exit;
+    printf '\e[?1049l\e[2J\e[?7h\e[?25h'
 }
 
 reset_term(){
-    printf '\e[2J\e[%dH\e[?7l\e[?25l' "$rows";
+    printf '\e[2J\e[%dH\e[?7l\e[?25l' "$rows"
 }
 
 reverse(){
@@ -188,7 +188,7 @@ cursor() {
 }
 
 hud() {
-    printf '\e[%dH\e[44mfml\e[m%s\e[3%b\e[m %s' "$LINES" "${status:+ ${status^} : }" "${mark:-  }" "$bar"
+    printf '\e[%dH\e[44mRahmat\e[m%s\e[3%b\e[m %s' "$LINES" "${status:+ ${status^} : }" "${mark:-  }" "$bar"
 }
 
 keymap() {
