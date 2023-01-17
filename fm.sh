@@ -28,4 +28,5 @@ while :
 do
     render
 
+    read -sn1 k1
 done
