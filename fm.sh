@@ -21,6 +21,6 @@ function render {
 
 while :
 do
-
+    render
 
 done
