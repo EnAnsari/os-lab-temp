@@ -1,11 +1,12 @@
 #!/bin/bash
-# Author: Vito Cucek (vito.cucek@gmail.com)
+# github.com/EnAnsari
+# Rahmat2022a@gmail.com
 
 # Print help
 if [[ $1 = "--help" ]]; then
-    echo 'File browser'
-    echo 'Author: Vito Cucek'
-    echo ' '
+    echo 'File Manager'
+    echo 'Author: Rahmatollah Ansari\n'
+    # echo ' '
     echo 'Usage:'
     echo ' fb [-dbh] [folder]'
     echo ' '
