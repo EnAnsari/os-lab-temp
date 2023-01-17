@@ -17,6 +17,17 @@ function row {
     ((dc_canvas_height++))
 }
 
+function terminal_restore {
+    # restore line wrapping
+    printf '\e[?7h'
+    # show cursor
+    printf '\e[?25h'
+    # restore array separator
+    IFS=$SAVEIFS
+    # show user input
+    stty echo
+}
+
 function render {
     dc_canvas_height=0
     row "---------------------------------------------------------------------------------------"
@@ -30,3 +41,6 @@ do
 
     read -sn1 k1
 done
+
+terminal_restore
+exit 0
