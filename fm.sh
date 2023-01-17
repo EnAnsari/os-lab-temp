@@ -11,3 +11,16 @@ if [[ $1 = "--help" ]]; then
     echo 'Email: Rahmat2022a@gmail.com'
     echo ''
 fi
+
+function render {
+    dc_canvas_height=0
+    row "---------------------------------------------------------------------------------------"
+    row "${hosts[$current_host]}$current_pwd" $col_nav
+    row "---------------------------------------------------------------------------------------"
+}
+
+while :
+do
+
+
+done
