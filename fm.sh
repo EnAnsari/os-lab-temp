@@ -12,6 +12,11 @@ if [[ $1 = "--help" ]]; then
     echo ''
 fi
 
+function row {
+    printf "$3$2%s$col_none\033[K\n" "$1"
+    ((dc_canvas_height++))
+}
+
 function render {
     dc_canvas_height=0
     row "---------------------------------------------------------------------------------------"
